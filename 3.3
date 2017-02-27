@@ -1,0 +1,29 @@
+Components of Hadoop 2.x :
+
+In case of Hadoop 1.x we wee having only only major component's : HDFS and Map Reduce
+Hadoop 1.x Architecture has lot of limitations and drawbacks. So that Hadoop Community
+has evaluated and redesigned this Architecture into Hadoop 2.x Architecture.
+Hadoop 2.x Architecture is completely different and resolved all Hadoop 1.x Architecture’s 
+limitations and drawbacks.in case of Hadoop 2.x we have 3 main components those are:
+
+> HDFS
+> YARN
+> MapReduce
+
+The major changed component is Yarn,that was not present in Hadoop 1.x.Hadoop 2.x components
+work in parallel and with high fault-tolerant manner.
+
+> Both master and slave contains HDFS and MapReduce components
+> Master Node contains two components > Resource Manager(Yarn or MapReduce) and HDFS which is  
+  also known as name node which is used to store meta Data.
+> Slave Node also contains two components > Node manager and HDFS in this case HDFS also known
+  as Data Node use to store actual or application big data.
+  
+>  HDFS stands for Hadoop Distributed File System.It is used as a Distributed Storage System in 
+   Hadoop Architecture.
+>  YARN stands for Yet Another Resource Negotiator. It is new Component in Hadoop 2.x Architecture.
+   It is great enabler for dynamic resource utilization on Hadoop framework as users can run various 
+   applications without thinking about workloads.YARN based Hadoop architecture, supports parallel
+   processing of huge data sets.
+>  MapReduce is a Batch Processing or Distributed Data Processing Module.It breaks down a big data 
+   processing job into smaller tasks. 
