@@ -21,10 +21,20 @@ work in parallel and with high fault-tolerant manner.
   
 >  HDFS stands for Hadoop Distributed File System.It is used as a Distributed Storage System in 
    Hadoop Architecture.HDFS component creates several replicas of the data block to be distributed
-   across different clusters for reliable and quick data access. 
+   across different clusters for reliable and quick data access.
+   -HDFS operates on a Master-Slave architecture model where the NameNode acts as the master node for
+   keeping a track of the storage cluster and the DataNode acts as a slave node summing up to the 
+   various systems within a Hadoop cluster.
+   
 >  YARN stands for Yet Another Resource Negotiator. It is new Component in Hadoop 2.x Architecture.
-   It is great enabler for dynamic resource utilization on Hadoop framework as users can run various 
+   -It is great enabler for dynamic resource utilization on Hadoop framework as users can run various 
    applications without thinking about workloads.YARN based Hadoop architecture, supports parallel
    processing of huge data sets.
+   
 >  MapReduce is a Batch Processing or Distributed Data Processing Module.It breaks down a big data 
    processing job into smaller tasks. 
+   -The basic principle of operation behind MapReduce is that the "MAP" job sends a query for processing 
+   to various nodes in a Hadoop cluster and the "REDUCE" job collects all the results to output into a 
+   single value.
+   -Map Task in the Hadoop ecosystem takes input data and splits into independent chunks and output of
+   this task will be the input for Reduce Task.
